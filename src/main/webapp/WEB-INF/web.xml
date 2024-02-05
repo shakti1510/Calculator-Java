@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Addition</servlet-name>
+  	<servlet-class>com.jsp.servlet.ServletProject_Calculator.AddNumServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Subtraction</servlet-name>
+  	<servlet-class>com.jsp.servlet.ServletProject_Calculator.SubNumServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Multiplication</servlet-name>
+  	<servlet-class>com.jsp.servlet.ServletProject_Calculator.MulNumServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Division</servlet-name>
+  	<servlet-class>com.jsp.servlet.ServletProject_Calculator.DivNumServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Modulus</servlet-name>
+  	<servlet-class>com.jsp.servlet.ServletProject_Calculator.ModNumServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	  <servlet-name>Addition</servlet-name>
+	  <url-pattern>/AddNum</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+	  <servlet-name>Subtraction</servlet-name>
+	  <url-pattern>/SubNum</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+	  <servlet-name>Multiplication</servlet-name>
+	  <url-pattern>/MulNum</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+	  <servlet-name>Division</servlet-name>
+	  <url-pattern>/DivNum</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+	  <servlet-name>Modulus</servlet-name>
+	  <url-pattern>/ModNum</url-pattern>
+  </servlet-mapping>
+</web-app>
